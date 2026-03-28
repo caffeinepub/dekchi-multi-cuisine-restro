@@ -1325,9 +1325,9 @@ export default function App() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform">
-                  <span className="text-white text-sm font-medium">
+                <div className="absolute inset-0 group-hover:bg-black/20 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-white text-sm font-semibold drop-shadow">
                     {img.alt}
                   </span>
                 </div>
