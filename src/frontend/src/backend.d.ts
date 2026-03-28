@@ -17,9 +17,19 @@ export interface Reservation {
     phoneNumber: string;
     numberOfGuests: bigint;
 }
+export interface MenuItem {
+    id: bigint;
+    category: string;
+    name: string;
+    price: bigint;
+    description: string;
+    imageUrl: string;
+}
 export type Time = bigint;
 export interface backendInterface {
     createReservation(name: string, phoneNumber: string, date: string, time: string, numberOfGuests: bigint, note: string | null): Promise<bigint>;
     getAllReservations(): Promise<Array<Reservation>>;
     getReservation(id: bigint): Promise<Reservation>;
+    getMenuItems(): Promise<Array<MenuItem>>;
+    getMenuItemsByCategory(category: string): Promise<Array<MenuItem>>;
 }

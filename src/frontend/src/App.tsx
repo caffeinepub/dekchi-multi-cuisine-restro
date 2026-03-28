@@ -728,6 +728,10 @@ const galleryImages = [
     span: "col-span-2",
   },
   {
+    src: "/assets/uploads/image-019d34f2-f23f-73ab-9dfd-bddbb8256c60-1.png",
+    alt: "DEKCHI Restro – Interior",
+  },
+  {
     src: "/assets/generated/paneer-tikka.dim_600x400.jpg",
     alt: "Paneer Tikka",
   },
@@ -781,7 +785,10 @@ function StarRating({ rating }: { rating: number }) {
 function MenuCard({
   item,
   categoryImage,
-}: { item: MenuItem; categoryImage: string }) {
+}: {
+  item: MenuItem;
+  categoryImage: string;
+}) {
   const img = item.image ?? categoryImage;
   return (
     <motion.div
